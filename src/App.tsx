@@ -2,8 +2,6 @@ import React from "react";
 
 import HomePage from "./pages/home";
 
-function App() {
-  return <HomePage />;
-}
+const App: React.FC = () => <HomePage />;
 
 export default App;
