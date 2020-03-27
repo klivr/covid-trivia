@@ -1,0 +1,77 @@
+{
+    "questions": {
+      "virus": {
+
+        "1": {
+          "id": "1", 
+          "question": "¿Por qué se llama coronavirus?",
+          "options": [{
+             "id": "1", 
+             "value": "Porque bajo la vista del microscopio electrónico, su apariencia parece una corona."
+            },{
+             "id": "2", 
+             "value": "Porque basado en hechos históricos, el primero fue descubierto en el ámbito de la realeza."
+            },{
+             "id": "3",
+             "value": "Porque sus síntomas son principalmente la fiebre y enfermedades en el corazón (coronarias)."
+            }
+          ],
+          "correctAnswer": "1", 
+          "moreInformation": [{"title": "", "link": ""}]
+        },
+        "2":{
+          "id": "2", 
+          "question": "¿Qué significa COVID19?",
+          "options": [{
+             "id": "1", 
+             "value": "Es un acrónimo del inglés Corona Virus Disease."
+            },{
+             "id": "2", 
+             "value": "Es la composición molecular del virus."
+            },{
+             "id": "3",
+             "value": "Es un acrónimo del latín Coronam Virum 2019."
+            }
+          ],
+          "correctAnswer": "1", 
+          "moreInformation": [{"title": "", "link": ""}]
+        },
+          "3":{
+            "id": "3", 
+            "question": "¿Cómo se llama el tipo de corona virus que causa la enfermedad COVID19?",
+            "options": [{
+             "id": "1", 
+             "value": "SARS-CoV-2."
+            },{
+             "id": "2", 
+             "value": "SARS-CoV-1."
+            },{
+             "id": "3",
+             "value": "CoV-ID-19."
+            }
+          ],
+          "correctAnswer": "1", 
+          "moreInformation": [{"title": "", "link": ""}]
+        },
+        "4":{
+          "id": "4", 
+          "question": "¿Qué síntomas se presentan principalmente en la enfermedad COVID19?",
+          "options": [{
+             "id": "1", 
+             "value": "Fiebre, tos seca, disnea y fatiga."
+            },{
+             "id": "2", 
+             "value": "Fiebre, tos, diarrea y resfrío."
+            },{
+             "id": "3",
+             "value": "Fiebre, tos seca, vómitos y mialgia."
+            }
+          ],
+          "correctAnswer": "1", 
+          "moreInformation": [{"title": "", "link": ""}]
+        },
+        "order": ["1", "2" ,"3", "4"]
+      }
+    }   
+  }
+  
