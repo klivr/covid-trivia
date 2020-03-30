@@ -1,0 +1,101 @@
+.question {
+  text-align: center;
+}
+
+.questionNumber {
+  font-size: 14px;
+  font-family: "Pacifico", cursive;
+  margin: 0;
+  text-align: center;
+}
+
+.questionTitle {
+  color: #333;
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.optionsReadOnly {
+  pointer-events: none;
+}
+
+.options > li {
+  margin: 16px 0;
+}
+
+.option {
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  min-height: 32px;
+  max-width: 400px;
+  padding: 8px 16px;
+  width: 90%;
+}
+
+.option:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.selectedOption,
+.selectedOption:hover {
+  background: rgba(52, 93, 126, 0.6);
+  color: #fff;
+}
+
+.selectedOptionCorrect,
+.optionCorrect,
+.selectedOptionIncorrect {
+  position: relative;
+}
+
+.optionCorrect::after,
+.selectedOptionCorrect::after,
+.selectedOptionIncorrect::after {
+  background: green;
+  mask-image: url("/icons/check.svg");
+  mask-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  content: "";
+  height: 32px;
+  position: absolute;
+  right: -16px;
+  top: calc(50% - 16px);
+  width: 32px;
+}
+
+.optionCorrect::after {
+  opacity: 0.6;
+}
+
+.selectedOptionIncorrect::after {
+  background: red;
+  mask-image: url("/icons/x-mark.svg");
+}
+
+.nextButton {
+  background: rgba(52, 93, 126, 1);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 24px auto 0;
+  width: 120px;
+}
+
+.nextButtonDisabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

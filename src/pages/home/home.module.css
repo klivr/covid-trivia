@@ -1,0 +1,12 @@
+.homePage {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.homePageTitle {
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  font-size: 56px;
+  text-align: center;
+  font-weight: normal;
+}

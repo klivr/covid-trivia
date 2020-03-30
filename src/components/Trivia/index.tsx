@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import { shuffleArray, selectRandomElements } from "../../utils/array";
 import Question from "../Question/index";
 
 import questions from "../../data/questions.json";
@@ -8,31 +9,43 @@ interface TriviaState {
   currentQuestion: number;
   responses: number[];
   questionsTest: any;
+  questionsOrder: any[];
 }
+
+const TOTAL_QUESTIONS = 15;
 
 export default () => {
   const [test, setTest] = useState<TriviaState>({
-    currentQuestion: 1,
-    questionsTest: questions.questions.virus,
+    currentQuestion: 0,
+    questionsTest: questions.questions,
+    questionsOrder: selectRandomElements(questions.questions.order, TOTAL_QUESTIONS),
     responses: [],
   });
 
   const moveNextQuestion = (response: number) => {
-    setTest({
-      ...test,
-      currentQuestion: test.currentQuestion + 1,
-      responses: [...test.responses, response],
-    });
+    if (test.currentQuestion + 1 < TOTAL_QUESTIONS) {
+      setTest({
+        ...test,
+        currentQuestion: test.currentQuestion + 1,
+        responses: [...test.responses, response],
+      });
+    } else {
+      alert("You completed the test");
+    }
   };
 
-  const { currentQuestion, questionsTest } = test;
+  const { currentQuestion, questionsOrder, questionsTest } = test;
+  const selectedQuestion = questionsTest[questionsOrder[currentQuestion]];
 
   return (
     <Question
-      id={questionsTest[currentQuestion].id}
-      text={questionsTest[currentQuestion].question}
+      id={selectedQuestion.id}
+      text={selectedQuestion.question}
+      correctAnswer={selectedQuestion.correctAnswer}
+      sourceLinks={selectedQuestion.sourceLinks}
       onNextQuestion={moveNextQuestion}
-      options={questionsTest[currentQuestion].options}
+      options={shuffleArray(selectedQuestion.options)}
+      totalQuestions={TOTAL_QUESTIONS}
     />
   );
 };

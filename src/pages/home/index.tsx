@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Trivia from "../../components/Trivia";
 
-export default () => (
-  <div>
-    <h1>Bienvenido a Covid Trivia</h1>
+import styles from "./home.module.css";
+import Intro from "../../components/Intro";
 
-    <Trivia />
-  </div>
-);
+export default () => {
+  const [startTrivia, setStartTrivia] = useState(false);
+
+  const onClickStart = () => {
+    setStartTrivia(true);
+  };
+
+  return (
+    <div className={styles.homePage}>
+      <h1 className={styles.homePageTitle}>Covid Trivia</h1>
+      {startTrivia ? <Trivia /> : <Intro onStart={onClickStart} />}
+    </div>
+  );
+};

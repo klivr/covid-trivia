@@ -1,452 +1,553 @@
 {
-    "questions": {
-      "virus": {
+  "questions": {
+    "1": {
+      "id": "1",
+      "question": "¿Por qué se llama coronavirus?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Porque bajo la vista del microscopio electrónico, su apariencia parece una corona."
+        },
+        {
+          "id": "2",
+          "value": "Porque basado en hechos históricos, el primero fue descubierto en el ámbito de la realeza."
+        },
+        {
+          "id": "3",
+          "value": "Porque sus síntomas son principalmente la fiebre y enfermedades en el corazón (coronarias)."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "2": {
+      "id": "2",
+      "question": "¿Qué significa COVID19?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Es un acrónimo del inglés Corona Virus Disease."
+        },
+        {
+          "id": "2",
+          "value": "Es la composición molecular del virus."
+        },
+        {
+          "id": "3",
+          "value": "Es un acrónimo del latín Coronam Virum 2019."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "3": {
+      "id": "3",
+      "question": "¿Cómo se llama el tipo de corona virus que causa la enfermedad COVID19?",
+      "options": [
+        {
+          "id": "1",
+          "value": "SARS-CoV-2."
+        },
+        {
+          "id": "2",
+          "value": "SARS-CoV-1."
+        },
+        {
+          "id": "3",
+          "value": "CoV-ID-19."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "4": {
+      "id": "4",
+      "question": "¿Qué síntomas se presentan principalmente en la enfermedad COVID19?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Fiebre, tos seca, disnea y fatiga."
+        },
+        {
+          "id": "2",
+          "value": "Fiebre, tos, diarrea y resfrío."
+        },
+        {
+          "id": "3",
+          "value": "Fiebre, tos seca, vómitos y mialgia."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "5": {
+      "id": "5",
+      "question": "¿Como se propaga la COVID19?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Por contacto con personas infectados."
+        },
+        {
+          "id": "2",
+          "value": "Por contacto con objetos que puedan tener el virus."
+        },
+        {
+          "id": "3",
+          "value": "Las dos anteriores."
+        }
+      ],
+      "correctAnswer": "3",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "6": {
+      "id": "6",
+      "question": "¿En qué ciudad se produjo el primer caso en humanos de la COVID19?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Wuhan, China."
+        },
+        {
+          "id": "2",
+          "value": "Tao yuan, Taiwán."
+        },
+        {
+          "id": "3",
+          "value": "Taiyuan, China."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "7": {
+      "id": "7",
+      "question": "¿En qué fecha se descubrió el primer caso de COVID19 en el mundo?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Noviembre 2019."
+        },
+        {
+          "id": "2",
+          "value": "Diciembre 2019."
+        },
+        {
+          "id": "3",
+          "value": "Enero 2020."
+        }
+      ],
+      "correctAnswer": "2",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "8": {
+      "id": "8",
+      "question": "¿En qué día se registró la primera muerte provocada por la COVID19?",
+      "options": [
+        {
+          "id": "1",
+          "value": "11 de enero 2020."
+        },
+        {
+          "id": "2",
+          "value": "3 de enero 2020."
+        },
+        {
+          "id": "3",
+          "value": "22 de enero 2020."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "9": {
+      "id": "9",
+      "question": "¿En qué fecha se conoció el primer caso fuera de china?",
+      "options": [
+        {
+          "id": "1",
+          "value": "13 de enero 2020."
+        },
+        {
+          "id": "2",
+          "value": "3 de enero 2020."
+        },
+        {
+          "id": "3",
+          "value": "17 de enero 2020."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "10": {
+      "id": "10",
+      "question": "¿Cuál fue el segundo país en registrar un caso de la enfermedad?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Tailandia."
+        },
+        {
+          "id": "2",
+          "value": "Taiwán."
+        },
+        {
+          "id": "3",
+          "value": "China."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "11": {
+      "id": "11",
+      "question": "¿Cuál fue el primer país de Europa en registrar un caso?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Francia."
+        },
+        {
+          "id": "2",
+          "value": "Italia."
+        },
+        {
+          "id": "3",
+          "value": "España."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "12": {
+      "id": "12",
+      "question": "¿Cómo se llama el crucero puesto en cuarentena el día 4 de febrero?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Diamond Princess."
+        },
+        {
+          "id": "2",
+          "value": "Costa Concordia"
+        },
+        {
+          "id": "3",
+          "value": "Royal Princess"
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "13": {
+      "id": "13",
+      "question": "¿A quién culpan del contagio en Corea del Sur?",
+      "options": [
+        {
+          "id": "1",
+          "value": "A una secta."
+        },
+        {
+          "id": "2",
+          "value": "Al gobierno estadounidense."
+        },
+        {
+          "id": "3",
+          "value": "A un turista."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "14": {
+      "id": "14",
+      "question": "¿Qué día el COVID19 es declarado una pandemia por la OMS?",
+      "options": [
+        {
+          "id": "1",
+          "value": "11 de marzo."
+        },
+        {
+          "id": "2",
+          "value": "27 de febrero."
+        },
+        {
+          "id": "3",
+          "value": "27 de enero."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "15": {
+      "id": "15",
+      "question": "¿Cuál fue la mayor cantidad de muertes por COVID19 en 24hs?",
+      "options": [
+        {
+          "id": "1",
+          "value": "475 personas."
+        },
+        {
+          "id": "2",
+          "value": "595 personas."
+        },
+        {
+          "id": "3",
+          "value": "365 personas."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "16": {
+      "id": "16",
+      "question": "¿Qué es una pandemia?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Enfermedad epidémica que se extiende a muchos países."
+        },
+        {
+          "id": "2",
+          "value": "Enfermedad que proviene de los Ailuropoda melanoleuca (osos panda)."
+        },
+        {
+          "id": "3",
+          "value": "Un decreto de cuarentena obligatoria."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "17": {
+      "id": "17",
+      "question": "¿Por qué se llama cuarentena si solo son 14 días?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Porque la primera cuarentena de la historia duró 40 días."
+        },
+        {
+          "id": "2",
+          "value": "Porque solo corren riesgo las personas mayores de 40 años."
+        },
+        {
+          "id": "3",
+          "value": "Porque solo se puede salir cada 40 horas."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "18": {
+      "id": "18",
+      "question": "¿Cuál es el tiempo de vida del COVID en el Cobre?",
+      "options": [
+        {
+          "id": "1",
+          "value": "4 horas."
+        },
+        {
+          "id": "2",
+          "value": "2 días."
+        },
+        {
+          "id": "3",
+          "value": "8 horas."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "19": {
+      "id": "19",
+      "question": "¿Cuál es el tiempo de vida del COVID en papel, madera o vidrio?",
+      "options": [
+        {
+          "id": "1",
+          "value": "4 días."
+        },
+        {
+          "id": "2",
+          "value": "8 a 9 días."
+        },
+        {
+          "id": "3",
+          "value": "5 horas."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "20": {
+      "id": "20",
+      "question": "¿Cuál es el tiempo de vida del COVID en cerámica o teflón?",
+      "options": [
+        {
+          "id": "1",
+          "value": "5 días."
+        },
+        {
+          "id": "2",
+          "value": "4 días."
+        },
+        {
+          "id": "3",
+          "value": "1 a 2 días."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "21": {
+      "id": "21",
+      "question": "¿Cómo prevengo el contagio si tengo tos?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Toser sobre el pliegue del codo."
+        },
+        {
+          "id": "2",
+          "value": "Toser a un costado mirando en dirección al piso."
+        },
+        {
+          "id": "3",
+          "value": "Taparse siempre la boca con la palma de la mano al toser."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "22": {
+      "id": "22",
+      "question": "¿Cuánto puede pasar desde el contagio con el virus hasta desarrollar la enfermedad?",
+      "options": [
+        {
+          "id": "1",
+          "value": "De 2 a 14 días."
+        },
+        {
+          "id": "2",
+          "value": "Es inmediato."
+        },
+        {
+          "id": "3",
+          "value": "De 15 a 20 días."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "23": {
+      "id": "23",
+      "question": "¿Según el concepto matemático R0, a cuantos puede contagiar un enfermo de COVID19?",
+      "options": [
+        {
+          "id": "1",
+          "value": "2.4 personas."
+        },
+        {
+          "id": "2",
+          "value": "5.2 personas."
+        },
+        {
+          "id": "3",
+          "value": "3.7 personas."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "24": {
+      "id": "24",
+      "question": "¿A quiénes se considera grupo de riesgo para la enfermedad?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Individuos mayores de 60 años, o con enfermedades crónicas, o con diabetes."
+        },
+        {
+          "id": "2",
+          "value": "Personas de entre 40 y 50 años."
+        },
+        {
+          "id": "3",
+          "value": "Los niños menores de 14 años."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "25": {
+      "id": "25",
+      "question": "¿Puedo portar el virus y no enfermarme en el tiempo de vida del mismo?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Si, existen personas asintomáticas."
+        },
+        {
+          "id": "2",
+          "value": "No, cualquier persona infectada se enferma al finalizar la incubación del virus."
+        },
+        {
+          "id": "3",
+          "value": "Si, haciendo ejercicios y comiendo saludable, el organismo detiene la incubación del virus."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
+    "26": {
+      "id": "26",
+      "question": "¿Quiénes deberían usar barbijos?",
+      "options": [
+        {
+          "id": "1",
+          "value": "Los infectados evitando el contagio y la propagación del virus."
+        },
+        {
+          "id": "2",
+          "value": "Todas las personas para prevenir la infección y la futura propagación del virus."
+        },
+        {
+          "id": "3",
+          "value": "Solo las personas consideras de riesgo para la enfermedad."
+        }
+      ],
+      "correctAnswer": "1",
+      "sourceLinks": [{ "title": "", "link": "" }]
+    },
 
-        "1": {
-          "id": "1", 
-          "question": "¿Por qué se llama coronavirus?",
-          "options": [{
-             "id": "1", 
-             "value": "Porque bajo la vista del microscopio electrónico, su apariencia parece una corona."
-            },{
-             "id": "2", 
-             "value": "Porque basado en hechos históricos, el primero fue descubierto en el ámbito de la realeza."
-            },{
-             "id": "3",
-             "value": "Porque sus síntomas son principalmente la fiebre y enfermedades en el corazón (coronarias)."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "2":{
-          "id": "2", 
-          "question": "¿Qué significa COVID19?",
-          "options": [{
-             "id": "1", 
-             "value": "Es un acrónimo del inglés Corona Virus Disease."
-            },{
-             "id": "2", 
-             "value": "Es la composición molecular del virus."
-            },{
-             "id": "3",
-             "value": "Es un acrónimo del latín Coronam Virum 2019."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-          "3":{
-            "id": "3", 
-            "question": "¿Cómo se llama el tipo de corona virus que causa la enfermedad COVID19?",
-            "options": [{
-             "id": "1", 
-             "value": "SARS-CoV-2."
-            },{
-             "id": "2", 
-             "value": "SARS-CoV-1."
-            },{
-             "id": "3",
-             "value": "CoV-ID-19."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "4":{
-          "id": "4", 
-          "question": "¿Qué síntomas se presentan principalmente en la enfermedad COVID19?",
-          "options": [{
-             "id": "1", 
-             "value": "Fiebre, tos seca, disnea y fatiga."
-            },{
-             "id": "2", 
-             "value": "Fiebre, tos, diarrea y resfrío."
-            },{
-             "id": "3",
-             "value": "Fiebre, tos seca, vómitos y mialgia."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "5":{
-          "id": "5", 
-          "question": "¿Como se propaga la COVID19?",
-          "options": [{
-             "id": "1", 
-             "value": "Por contacto con personas infectados."
-            },{
-             "id": "2", 
-             "value": "Por contacto con objetos que puedan tener el virus."
-            },{
-             "id": "3",
-             "value": "Las dos anteriores."
-            }
-          ],
-          "correctAnswer": "3", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "6":{
-          "id": "6", 
-          "question": "¿En qué ciudad se produjo el primer caso en humanos de la COVID19?",
-          "options": [{
-             "id": "1", 
-             "value": "Wuhan, China."
-            },{
-             "id": "2", 
-             "value": "Tao yuan, Taiwán."
-            },{
-             "id": "3",
-             "value": "Taiyuan, China."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "7":{
-          "id": "7", 
-          "question": "¿En qué fecha se descubrió el primer caso de COVID19 en el mundo?",
-          "options": [{
-             "id": "1", 
-             "value": "Noviembre 2019."
-            },{
-             "id": "2", 
-             "value": "Diciembre 2019."
-            },{
-             "id": "3",
-             "value": "Enero 2020."
-            }
-          ],
-          "correctAnswer": "2", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "8":{
-          "id": "8", 
-          "question": "¿En qué día se registró la primera muerte provocada por la COVID19?",
-          "options": [{
-             "id": "1", 
-             "value": "11 de enero 2020."
-            },{
-             "id": "2", 
-             "value": "3 de enero 2020."
-            },{
-             "id": "3",
-             "value": "22 de enero 2020."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "9":{
-          "id": "9", 
-          "question": "¿En qué fecha se conoció el primer caso fuera de china?",
-          "options": [{
-             "id": "1", 
-             "value": "13 de enero 2020."
-            },{
-             "id": "2", 
-             "value": "3 de enero 2020."
-            },{
-             "id": "3",
-             "value": "17 de enero 2020."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "10":{
-          "id": "10", 
-          "question": "¿Cuál fue el segundo país en registrar un caso de la enfermedad?",
-          "options": [{
-             "id": "1", 
-             "value": "Tailandia."
-            },{
-             "id": "2", 
-             "value": "Taiwán."
-            },{
-             "id": "3",
-             "value": "China."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "11":{
-          "id": "11", 
-          "question": "¿Cuál fue el primer país de Europa en registrar un caso?",
-          "options": [{
-             "id": "1", 
-             "value": "Francia."
-            },{
-             "id": "2", 
-             "value": "Italia."
-            },{
-             "id": "3",
-             "value": "España."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "12":{
-          "id": "12", 
-          "question": "¿Cómo se llama el crucero puesto en cuarentena el día 4 de febrero?",
-          "options": [{
-             "id": "1", 
-             "value": "Diamond Princess."
-            },{
-             "id": "2", 
-             "value": "Costa Concordia"
-            },{
-             "id": "3",
-             "value": "Royal Princess"
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "13":{
-          "id": "13", 
-          "question": "¿A quién culpan del contagio en Corea del Sur?",
-          "options": [{
-             "id": "1", 
-             "value": "A una secta."
-            },{
-             "id": "2", 
-             "value": "Al gobierno estadounidense."
-            },{
-             "id": "3",
-             "value": "A un turista."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "14":{
-          "id": "14", 
-          "question": "¿Qué día el COVID19 es declarado una pandemia por la OMS?",
-          "options": [{
-             "id": "1", 
-             "value": "11 de marzo."
-            },{
-             "id": "2", 
-             "value": "27 de febrero."
-            },{
-             "id": "3",
-             "value": "27 de enero."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "15":{
-          "id": "15", 
-          "question": "¿Cuál fue la mayor cantidad de muertes por COVID19 en 24hs?",
-          "options": [{
-             "id": "1", 
-             "value": "475 personas."
-            },{
-             "id": "2", 
-             "value": "595 personas."
-            },{
-             "id": "3",
-             "value": "365 personas."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "16":{
-          "id": "16", 
-          "question": "¿Qué es una pandemia?",
-          "options": [{
-             "id": "1", 
-             "value": "Enfermedad epidémica que se extiende a muchos países."
-            },{
-             "id": "2", 
-             "value": "Enfermedad que proviene de los Ailuropoda melanoleuca (osos panda)."
-            },{
-             "id": "3",
-             "value": "Un decreto de cuarentena obligatoria."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "17":{
-          "id": "17", 
-          "question": "¿Por qué se llama cuarentena si solo son 14 días?",
-          "options": [{
-             "id": "1", 
-             "value": "Porque la primera cuarentena de la historia duró 40 días."
-            },{
-             "id": "2", 
-             "value": "Porque solo corren riesgo las personas mayores de 40 años."
-            },{
-             "id": "3",
-             "value": "Porque solo se puede salir cada 40 horas."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "18":{
-          "id": "18", 
-          "question": "¿Cuál es el tiempo de vida del COVID en el Cobre?",
-          "options": [{
-             "id": "1", 
-             "value": "4 horas."
-            },{
-             "id": "2", 
-             "value": "2 días."
-            },{
-             "id": "3",
-             "value": "8 horas."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "19":{
-          "id": "19", 
-          "question": "¿Cuál es el tiempo de vida del COVID en papel, madera o vidrio?",
-          "options": [{
-             "id": "1", 
-             "value": "4 días."
-            },{
-             "id": "2", 
-             "value": "8 a 9 días."
-            },{
-             "id": "3",
-             "value": "5 horas."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "20":{
-          "id": "20", 
-          "question": "¿Cuál es el tiempo de vida del COVID en cerámica o teflón?",
-          "options": [{
-             "id": "1", 
-             "value": "5 días."
-            },{
-             "id": "2", 
-             "value": "4 días."
-            },{
-             "id": "3",
-             "value": "1 a 2 días."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "21":{
-          "id": "21", 
-          "question": "¿Cómo prevengo el contagio si tengo tos?",
-          "options": [{
-             "id": "1", 
-             "value": "Toser sobre el pliegue del codo."
-            },{
-             "id": "2", 
-             "value": "Toser a un costado mirando en dirección al piso."
-            },{
-             "id": "3",
-             "value": "Taparse siempre la boca con la palma de la mano al toser."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "22":{
-          "id": "22", 
-          "question": "¿Cuánto puede pasar desde el contagio con el virus hasta desarrollar la enfermedad?",
-          "options": [{
-             "id": "1", 
-             "value": "De 2 a 14 días."
-            },{
-             "id": "2", 
-             "value": "Es inmediato."
-            },{
-             "id": "3",
-             "value": "De 15 a 20 días."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "23":{
-          "id": "23", 
-          "question": "¿Según el concepto matemático R0, a cuantos puede contagiar un enfermo de COVID19?",
-          "options": [{
-             "id": "1", 
-             "value": "2.4 personas."
-            },{
-             "id": "2", 
-             "value": "5.2 personas."
-            },{
-             "id": "3",
-             "value": "3.7 personas."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "24":{
-          "id": "24", 
-          "question": "¿A quiénes se considera grupo de riesgo para la enfermedad?",
-          "options": [{
-             "id": "1", 
-             "value": "Individuos mayores de 60 años, o con enfermedades crónicas, o con diabetes."
-            },{
-             "id": "2", 
-             "value": "Personas de entre 40 y 50 años."
-            },{
-             "id": "3",
-             "value": "Los niños menores de 14 años."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "25":{
-          "id": "25",
-          "question": "¿Puedo portar el virus y no enfermarme en el tiempo de vida del mismo?",
-          "options": [{
-             "id": "1", 
-             "value": "Si, existen personas asintomáticas."
-            },{
-             "id": "2", 
-             "value": "No, cualquier persona infectada se enferma al finalizar la incubación del virus."
-            },{
-             "id": "3",
-             "value": "Si, haciendo ejercicios y comiendo saludable, el organismo detiene la incubación del virus."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        "26":{
-          "id": "26", 
-          "question": "¿Quiénes deberían usar barbijos?",
-          "options": [{
-             "id": "1", 
-             "value": "Los infectados evitando el contagio y la propagación del virus."
-            },{
-             "id": "2", 
-             "value": "Todas las personas para prevenir la infección y la futura propagación del virus."
-            },{
-             "id": "3",
-             "value": "Solo las personas consideras de riesgo para la enfermedad."
-            }
-          ],
-          "correctAnswer": "1", 
-          "moreInformation": [{"title": "", "link": ""}]
-        },
-        
-        "order": ["1", "2" ,"3", "4"]
-      }
-    }   
+    "order": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26"
+    ]
   }
-  
+}
