@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import questions from "../../data/questions.json";
+
 import styles from "./question.module.css";
 
 interface QuestionProps {
@@ -12,16 +12,23 @@ interface QuestionProps {
   onNextQuestion: (response: number) => void;
 }
 
-export default ({ correctAnswer, text, id: questionId, options, onNextQuestion, totalQuestions, sourceLinks }: QuestionProps) => {
-  const [response, setResponse] = useState();
-  const [links, setLinks] = useState();
+export default ({
+  correctAnswer,
+  text,
+  id: questionId,
+  options,
+  onNextQuestion,
+  totalQuestions,
+  sourceLinks,
+}: QuestionProps) => {
+  const [response, setResponse] = useState<number>(-1);
   const [answer, setAnswer] = useState({
     checked: false,
     correct: false,
   });
 
   useEffect(() => {
-    setResponse(null);
+    setResponse(-1);
   }, [questionId]);
 
   const onClickAnswer = () => {
@@ -68,13 +75,20 @@ export default ({ correctAnswer, text, id: questionId, options, onNextQuestion, 
       </ul>
       <button
         type="button"
-        className={[styles.nextButton, !response ? styles.nextButtonDisabled : ""].join(" ")}
+        className={[styles.nextButton, response === -1 ? styles.nextButtonDisabled : ""].join(" ")}
         onClick={onClickAnswer}
       >
         {answer.checked ? "Siguiente" : "Validar"}
       </button>
       <div>
-      {answer.checked ? "Show links": null}
+        {answer.checked &&
+          sourceLinks.map((link) => {
+            return (
+              <a href={link.link} target="_blank" rel="noopener noreferrer">
+                {link.title}
+              </a>
+            );
+          })}
       </div>
       <div className={styles.questionNumber}>
         Pregunta {questionId} / {totalQuestions}

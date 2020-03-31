@@ -8,7 +8,11 @@ export default ({ onStart }: IntroProps) => (
   <div>
     <p className = {style.top}>Con este juego queremos que aprendas todo acerca del COVID19.</p>
     
-    <button className = {style.introButton} type="button" onClick={onStart}>
+    <button 
+    className = {style.introButton} 
+    type="button" 
+    onClick={onStart}
+    >
       Jugá &amp; Aprendé
     </button>
     
