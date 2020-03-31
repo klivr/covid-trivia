@@ -12,7 +12,7 @@ interface TriviaState {
   questionsOrder: any[];
 }
 
-const TOTAL_QUESTIONS = 15;
+const TOTAL_QUESTIONS = 2;
 
 export default () => {
   const [test, setTest] = useState<TriviaState>({

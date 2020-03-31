@@ -1,0 +1,70 @@
+.finishContainer {
+  text-align: center;
+}
+
+.top {
+  text-align: center;
+  font-size: 21px;
+  font-family: Pacifico;
+  color: black;
+  margin: auto;
+  max-width: 90%;
+}
+
+.circleOuter {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  height: 200px;
+  margin: 24px auto;
+  padding: 8px;
+  width: 200px;
+}
+
+.circleInner {
+  background-color: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  overflow: hidden;
+  width: 200px;
+}
+
+.circleInner p {
+  color: rgb(114, 52, 126);
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 18px;
+  margin: 0;
+}
+
+.circleInner p.score {
+  font-size: 56px;
+  line-height: 48px;
+}
+
+.restartButton {
+  background: rgb(114, 52, 126);
+  border: 4px;
+  border-radius: 20px;
+  color: antiquewhite;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 40px;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.restartButton:hover {
+  background-color: rgba(127, 178, 255, 0.4);
+}
+
+.foot {
+  color: rgb(50, 50, 50);
+  text-align: center;
+  font-size: 18px;
+  font-family: Calibri, bold;
+  padding-top: 8px;
+}

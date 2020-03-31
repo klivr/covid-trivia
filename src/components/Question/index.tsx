@@ -53,7 +53,6 @@ export default ({
       <ul className={[styles.options, answer.checked ? styles.optionsReadOnly : ""].join(" ")}>
         {options.map(({ id, value }: any) => {
           const onClick = () => setResponse(id);
-
           return (
             <li key={id}>
               <button
@@ -84,7 +83,7 @@ export default ({
         {answer.checked &&
           sourceLinks.map((link) => {
             return (
-              <a href={link.link} target="_blank" rel="noopener noreferrer">
+              <a href={link.link} target="_blank" rel="noopener noreferrer" key={link.link}>
                 {link.title}
               </a>
             );
