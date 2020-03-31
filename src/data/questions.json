@@ -18,7 +18,7 @@
         }
       ],
       "correctAnswer": "1",
-      "sourceLinks": [{ "title": "", "link": "" }]
+      "sourceLinks": [{ "title": "Por qué se llama así al coronavirus", "link": "https://www.lanacion.com.ar/cultura/por-que-se-llama-asi-coronavirus-nid2337407" }]
     },
     "2": {
       "id": "2",
@@ -94,7 +94,7 @@
         },
         {
           "id": "3",
-          "value": "Las dos anteriores."
+          "value": "Ambas son correctas."
         }
       ],
       "correctAnswer": "3",

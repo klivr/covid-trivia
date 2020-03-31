@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import questions from "../../data/questions.json";
 import styles from "./question.module.css";
 
 interface QuestionProps {
@@ -12,8 +12,9 @@ interface QuestionProps {
   onNextQuestion: (response: number) => void;
 }
 
-export default ({ correctAnswer, text, id: questionId, options, onNextQuestion, totalQuestions }: QuestionProps) => {
+export default ({ correctAnswer, text, id: questionId, options, onNextQuestion, totalQuestions, sourceLinks }: QuestionProps) => {
   const [response, setResponse] = useState();
+  const [links, setLinks] = useState();
   const [answer, setAnswer] = useState({
     checked: false,
     correct: false,
@@ -65,7 +66,6 @@ export default ({ correctAnswer, text, id: questionId, options, onNextQuestion, 
           );
         })}
       </ul>
-      {answer.checked ? "Show links" : null}
       <button
         type="button"
         className={[styles.nextButton, !response ? styles.nextButtonDisabled : ""].join(" ")}
@@ -73,6 +73,9 @@ export default ({ correctAnswer, text, id: questionId, options, onNextQuestion, 
       >
         {answer.checked ? "Siguiente" : "Validar"}
       </button>
+      <div>
+      {answer.checked ? "Show links": null}
+      </div>
       <div className={styles.questionNumber}>
         Pregunta {questionId} / {totalQuestions}
       </div>
