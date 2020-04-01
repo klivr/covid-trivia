@@ -9,7 +9,7 @@ interface QuestionProps {
   sourceLinks: any[];
   id: string;
   totalQuestions: number;
-  onNextQuestion: (response: number) => void;
+  onNextQuestion: (response: number, isisCorrect: boolean) => void;
 }
 
 export default ({
@@ -24,7 +24,7 @@ export default ({
   const [response, setResponse] = useState<number>(-1);
   const [answer, setAnswer] = useState({
     checked: false,
-    correct: false,
+    isCorrect: false,
   });
 
   useEffect(() => {
@@ -33,15 +33,15 @@ export default ({
 
   const onClickAnswer = () => {
     if (answer.checked) {
+      onNextQuestion(response, answer.isCorrect);
       setAnswer({
         checked: false,
-        correct: false,
+        isCorrect: false,
       });
-      onNextQuestion(response);
     } else {
       setAnswer({
         checked: true,
-        correct: response === correctAnswer,
+        isCorrect: response === correctAnswer,
       });
     }
   };
@@ -60,9 +60,9 @@ export default ({
                 type="button"
                 className={[
                   styles.option,
-                  answer.checked && answer.correct && response === id ? styles.selectedOptionCorrect : "",
-                  answer.checked && !answer.correct && response === id ? styles.selectedOptionIncorrect : "",
-                  answer.checked && !answer.correct && correctAnswer === id ? styles.optionCorrect : "",
+                  answer.checked && answer.isCorrect && response === id ? styles.selectedOptionCorrect : "",
+                  answer.checked && !answer.isCorrect && response === id ? styles.selectedOptionIncorrect : "",
+                  answer.checked && !answer.isCorrect && correctAnswer === id ? styles.optionCorrect : "",
                   response === id ? styles.selectedOption : "",
                 ].join(" ")}
               >

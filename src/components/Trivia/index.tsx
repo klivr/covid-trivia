@@ -10,27 +10,40 @@ interface TriviaState {
   responses: number[];
   questionsTest: any;
   questionsOrder: any[];
+  totalCorrect: number;
 }
 
-const TOTAL_QUESTIONS = 2;
+interface TriviaProps {
+  onTriviaCompleted: (totalCorrect: number) => void;
+  totalQuestions: number;
+}
 
-export default () => {
+export default ({ onTriviaCompleted, totalQuestions }: TriviaProps) => {
   const [test, setTest] = useState<TriviaState>({
     currentQuestion: 0,
     questionsTest: questions.questions,
-    questionsOrder: selectRandomElements(questions.questions.order, TOTAL_QUESTIONS),
+    questionsOrder: selectRandomElements(questions.questions.order, totalQuestions),
     responses: [],
+    totalCorrect: 0,
   });
 
-  const moveNextQuestion = (response: number) => {
-    if (test.currentQuestion + 1 < TOTAL_QUESTIONS) {
+  const moveNextQuestion = (response: number, isCorrect: boolean) => {
+    if (test.currentQuestion + 1 < totalQuestions) {
       setTest({
         ...test,
         currentQuestion: test.currentQuestion + 1,
         responses: [...test.responses, response],
+        totalCorrect: test.totalCorrect + (isCorrect ? 1 : 0),
       });
     } else {
-      alert("You completed the test");
+      onTriviaCompleted(test.totalCorrect + (isCorrect ? 1 : 0));
+      setTest({
+        currentQuestion: 0,
+        questionsTest: questions.questions,
+        questionsOrder: selectRandomElements(questions.questions.order, totalQuestions),
+        responses: [],
+        totalCorrect: 0,
+      });
     }
   };
 
@@ -45,7 +58,7 @@ export default () => {
       sourceLinks={selectedQuestion.sourceLinks}
       onNextQuestion={moveNextQuestion}
       options={shuffleArray(selectedQuestion.options)}
-      totalQuestions={TOTAL_QUESTIONS}
+      totalQuestions={totalQuestions}
     />
   );
 };

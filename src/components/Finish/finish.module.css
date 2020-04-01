@@ -14,6 +14,7 @@
 .circleOuter {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
+  color: rgb(114, 52, 126);
   height: 200px;
   margin: 24px auto;
   padding: 8px;
@@ -32,12 +33,27 @@
   width: 200px;
 }
 
+.failedTest {
+  color: red;
+}
+
+.approvedTest {
+  color: yellow;
+}
+
+.excellentTest {
+  color: green;
+}
+
 .circleInner p {
-  color: rgb(114, 52, 126);
   text-align: center;
   font-family: "Pacifico", cursive;
   font-size: 18px;
   margin: 0;
+}
+
+.circleInner p:not(.score) {
+  color: rgb(114, 52, 126);
 }
 
 .circleInner p.score {
@@ -67,4 +83,51 @@
   font-size: 18px;
   font-family: Calibri, bold;
   padding-top: 8px;
+}
+
+.iconFacebook,
+.iconTwitter,
+.iconWhatsapp {
+  display: inline-block;
+  background-color: #1877f2;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 32px;
+  margin: 0 8px;
+  opacity: 0.95;
+  padding: 8px;
+  position: relative;
+  width: 32px;
+}
+
+.iconFacebook:hover,
+.iconTwitter:hover,
+.iconWhatsapp:hover {
+  opacity: 1;
+}
+
+.iconFacebook::after,
+.iconTwitter::after,
+.iconWhatsapp::after {
+  content: "";
+  background: #fff;
+  mask-image: url("/icons/facebook.svg");
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+
+.iconTwitter {
+  background-color: #1da1f2;
+}
+
+.iconTwitter::after {
+  mask-image: url("/icons/twitter.svg");
+}
+
+.iconWhatsapp {
+  background-color: #25d366;
+}
+.iconWhatsapp::after {
+  mask-image: url("/icons/whatsapp.svg");
 }
