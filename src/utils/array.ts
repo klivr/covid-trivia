@@ -10,5 +10,13 @@ export const shuffleArray = (array: any[]) => {
 };
 
 export const selectRandomElements = (array: any[], total: number) => {
-  return array;
+  const selectedQuestions = [];
+
+  while (selectedQuestions.length < total) {
+    const selectedItem = Math.floor(Math.random() * array.length);
+    selectedQuestions.push(array[selectedItem]);
+    array.splice(selectedItem, 1);
+  }
+  
+  return shuffleArray(selectedQuestions);
 };

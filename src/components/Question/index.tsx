@@ -6,6 +6,7 @@ interface QuestionProps {
   text: string;
   options: any[];
   correctAnswer: number;
+  indexQuestion: number;
   sourceLinks: any[];
   id: string;
   totalQuestions: number;
@@ -14,6 +15,7 @@ interface QuestionProps {
 
 export default ({
   correctAnswer,
+  indexQuestion,
   text,
   id: questionId,
   options,
@@ -90,7 +92,7 @@ export default ({
           })}
       </div>
       <div className={styles.questionNumber}>
-        Pregunta {questionId} / {totalQuestions}
+        Pregunta {indexQuestion} / {totalQuestions}
       </div>
     </div>
   );

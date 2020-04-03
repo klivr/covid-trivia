@@ -55,6 +55,7 @@ export default ({ onTriviaCompleted, totalQuestions }: TriviaProps) => {
       id={selectedQuestion.id}
       text={selectedQuestion.question}
       correctAnswer={selectedQuestion.correctAnswer}
+      indexQuestion={currentQuestion + 1}
       sourceLinks={selectedQuestion.sourceLinks}
       onNextQuestion={moveNextQuestion}
       options={shuffleArray(selectedQuestion.options)}
