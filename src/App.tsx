@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import CookieConsent from "react-cookie-consent";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 import HomePage from "./pages/home";
 
 import styles from "./styles.module.css";
 
 const App: React.FC = () => {
-  const [cookies, setCookies] = useState(false);
+  const [cookies, setCookies] = useState(!!Cookies.get("CookieConsent"));
   return (
     <>
       <CookieConsent

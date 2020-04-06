@@ -9,9 +9,9 @@ import Finish from "../../components/Finish";
 const TOTAL_QUESTIONS = 14;
 export default () => {
   const [trivia, setTrivia] = useState({
-    started: false,
-    completed: false,
-    totalCorrect: 0,
+    started: true,
+    completed: true,
+    totalCorrect: 8,
   });
 
   const onClickStart = () => {
