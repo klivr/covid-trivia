@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { shuffleArray, selectRandomElements } from "../../utils/array";
 import Question from "../Question/index";
@@ -22,10 +22,24 @@ export default ({ onTriviaCompleted, totalQuestions }: TriviaProps) => {
   const [test, setTest] = useState<TriviaState>({
     currentQuestion: 0,
     questionsTest: questions.questions,
-    questionsOrder: selectRandomElements(questions.questions.order, totalQuestions),
+    questionsOrder: [],
     responses: [],
     totalCorrect: 0,
   });
+
+  useEffect(() => {
+    if (test.questionsOrder.length === 0) {
+      setTest({
+        currentQuestion: 0,
+        questionsTest: questions.questions,
+        questionsOrder: selectRandomElements([...questions.questions.order], totalQuestions),
+        responses: [],
+        totalCorrect: 0,
+      });
+    }
+  }, [test, totalQuestions]);
+
+  console.log(test.questionsOrder);
 
   const moveNextQuestion = (response: number, isCorrect: boolean) => {
     if (test.currentQuestion + 1 < totalQuestions) {
@@ -40,7 +54,7 @@ export default ({ onTriviaCompleted, totalQuestions }: TriviaProps) => {
       setTest({
         currentQuestion: 0,
         questionsTest: questions.questions,
-        questionsOrder: selectRandomElements(questions.questions.order, totalQuestions),
+        questionsOrder: [],
         responses: [],
         totalCorrect: 0,
       });
@@ -50,7 +64,7 @@ export default ({ onTriviaCompleted, totalQuestions }: TriviaProps) => {
   const { currentQuestion, questionsOrder, questionsTest } = test;
   const selectedQuestion = questionsTest[questionsOrder[currentQuestion]];
 
-  return (
+  return questionsOrder.length ? (
     <Question
       id={selectedQuestion.id}
       text={selectedQuestion.question}
@@ -61,5 +75,7 @@ export default ({ onTriviaCompleted, totalQuestions }: TriviaProps) => {
       options={shuffleArray(selectedQuestion.options)}
       totalQuestions={totalQuestions}
     />
+  ) : (
+    <div>Cargando</div>
   );
 };

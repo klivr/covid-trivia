@@ -17,6 +17,6 @@ export const selectRandomElements = (array: any[], total: number) => {
     selectedQuestions.push(array[selectedItem]);
     array.splice(selectedItem, 1);
   }
-  
+
   return shuffleArray(selectedQuestions);
 };
