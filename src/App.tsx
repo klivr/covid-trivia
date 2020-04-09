@@ -21,6 +21,18 @@ const App: React.FC = () => {
 
       {!cookies && <div className={styles.overlay} />}
       <HomePage />
+      <div className={styles.footer}>
+        <p className={styles.developedBy}>
+          Desarrollado por{" "}
+          <a href="https://www.klivr.com" target="_blank" rel="noopener noreferrer">
+            Klivr.com
+          </a>
+        </p>
+        <p className={styles.agreement}>
+          El uso del sitio es gratuito. No almacenamos ni pedimos datos personales. <br />
+          No nos hacemos responsables si alguno de los datos no es correcto o esta desactualizado.
+        </p>
+      </div>
     </>
   );
 };
