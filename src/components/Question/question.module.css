@@ -99,3 +99,15 @@
   pointer-events: none;
   opacity: 0.6;
 }
+
+.sourceLink {
+  font-size: 18px;
+  color: #eee;
+  text-decoration: none;
+  display: block;
+  padding: 16px 0;
+}
+
+.sourceLink:hover {
+  text-decoration: underline;
+}

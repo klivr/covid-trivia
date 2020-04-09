@@ -85,7 +85,13 @@ export default ({
         {answer.checked &&
           sourceLinks.map((link) => {
             return (
-              <a href={link.link} target="_blank" rel="noopener noreferrer" key={link.link}>
+              <a
+                className={styles.sourceLink}
+                href={link.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={link.link}
+              >
                 {link.title}
               </a>
             );
