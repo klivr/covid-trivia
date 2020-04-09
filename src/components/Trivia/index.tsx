@@ -8,8 +8,7 @@ import questions from "../../data/questions.json";
 interface TriviaState {
   currentQuestion: number;
   responses: number[];
-  questionsTest: any;
-  questionsOrder: any[];
+  selectedQuestions: any[];
   totalCorrect: number;
 }
 
@@ -21,25 +20,21 @@ interface TriviaProps {
 export default ({ onTriviaCompleted, totalQuestions }: TriviaProps) => {
   const [test, setTest] = useState<TriviaState>({
     currentQuestion: 0,
-    questionsTest: questions.questions,
-    questionsOrder: [],
+    selectedQuestions: [],
     responses: [],
     totalCorrect: 0,
   });
 
   useEffect(() => {
-    if (test.questionsOrder.length === 0) {
+    if (test.selectedQuestions.length === 0) {
       setTest({
         currentQuestion: 0,
-        questionsTest: questions.questions,
-        questionsOrder: selectRandomElements([...questions.questions.order], totalQuestions),
+        selectedQuestions: selectRandomElements([...questions.order], totalQuestions),
         responses: [],
         totalCorrect: 0,
       });
     }
   }, [test, totalQuestions]);
-
-  console.log(test.questionsOrder);
 
   const moveNextQuestion = (response: number, isCorrect: boolean) => {
     if (test.currentQuestion + 1 < totalQuestions) {
@@ -53,18 +48,17 @@ export default ({ onTriviaCompleted, totalQuestions }: TriviaProps) => {
       onTriviaCompleted(test.totalCorrect + (isCorrect ? 1 : 0));
       setTest({
         currentQuestion: 0,
-        questionsTest: questions.questions,
-        questionsOrder: [],
+        selectedQuestions: [],
         responses: [],
         totalCorrect: 0,
       });
     }
   };
 
-  const { currentQuestion, questionsOrder, questionsTest } = test;
-  const selectedQuestion = questionsTest[questionsOrder[currentQuestion]];
+  const { currentQuestion, selectedQuestions } = test;
+  const selectedQuestion = (questions as any)[selectedQuestions[currentQuestion]];
 
-  return questionsOrder.length ? (
+  return selectedQuestions.length ? (
     <Question
       id={selectedQuestion.id}
       text={selectedQuestion.question}
